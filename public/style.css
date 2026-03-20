@@ -1,0 +1,64 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8fafc;
+}
+
+/* HERO */
+.hero {
+    padding: 80px 0
+}
+
+.hero h1 {
+    font-size: 48px
+}
+
+/* IMAGE */
+.profile-img {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px solid #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ICON BUTTON */
+.icon-btn {
+    background: #fff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* SKILL CARD */
+.skill-card {
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* PROJECT CARD */
+.project-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.project-card img {
+    width: 100%;
+}
+
+/* CTA */
+.cta {
+    background: #0f172a;
+    color: white;
+    padding: 80px 20px;
+    border-radius: 25px;
+    margin: 40px;
+}
