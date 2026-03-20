@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FoodDash Pro</title>
+
+
+<!-- Tailwind -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<style>
+.card {
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+</style>
+</head>
+
+<body class="bg-gray-100">
+  
+  <a href="https://pintu-prasad.web.app/foodify/index.html" target="_blank"> </a>
+
+
+<!--  NAVBAR -->
+<header class="flex justify-between items-center px-6 py-4 bg-white/80 backdrop-blur-lg shadow sticky top-0 z-50">
+                  <!--icon-->
+                 <div class="flex items-center gap-3 text-xl font-bold">
+
+  <img src="food logo.png" 
+       class="w-20 h-20 rounded-full shadow-md object-cover">
+
+  <span class="text-gray-800 wt;700 font;bold">FOODIFY</span>
+
+</div>
+  <nav class="hidden md:flex gap-6 font-medium">
+    <span class="hover:text-red-500 cursor-pointer">Home</span>
+    <span class="hover:text-red-500 cursor-pointer">Restaurants</span>
+    <span class="hover:text-red-500 cursor-pointer">Offers</span>
+    <span class="hover:text-red-500 cursor-pointer">Support</span>
+  </nav>
+    
+  <div class="relative w-70">
+
+  <!-- Search Icon -->
+  <span class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-500">
+    <span class="bi bi-search"></span>
+  </span>
+
+  <!-- Input -->
+  <input type="text"
+    placeholder="Search food..."
+    class="w-full pl-10 pr-4 py-2 rounded-full 
+           bg-gray-200 shadow-md 
+           focus:outline-none focus:ring-2 focus:ring-red-400 
+           transition duration-300">
+   </div>
+  
+   <div class="flex items-center gap-4">
+
+  <!--  CART BUTTON -->
+  <div class="relative cursor-pointer">
+
+    <!-- Icon Box -->
+    <div class="bg-gray-200 hover:bg-red-100 p-2 rounded-full shadow 
+                transition duration-300">
+
+      <span class="bi bi-cart3 text-lg text-blue-700 hover:text-brown-400"></span>
+
+    </div>
+
+    <!-- Badge -->
+    <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs 
+                 px-2 rounded-full shadow">
+      2
+    </span>
+
+  </div>
+
+  <!--  LOGIN BUTTON -->
+    <button class="bg-gradient-to-r from-red-500 to-orange-500 text-white 
+                 px-4 py-2 rounded-pill shadow-lg 
+                 hover:scale-105 hover:shadow-xl 
+                 transition duration-300">
+
+    Login
+ 
+  </button>
+
+</div>
+
+</div>
+
+
+</header>
+
+<!--  CAROUSEL -->
+<div id="banner" class="carousel slide mt-4" data-bs-ride="carousel">
+
+  <!-- Indicators -->
+  <div class="carousel-indicators">
+   
+    <button data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
+    <button data-bs-target="#banner" data-bs-slide-to="1"></button>
+    <button data-bs-target="#banner" data-bs-slide-to="2"></button>
+     <button data-bs-target="#banner" data-bs-slide-to="3"></button>
+ 
+  </div>
+
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row align-items-center bg-gradient-to-r from-orange-500 to-pink-500 text-white p-5 rounded-4 shadow-lg">
+
+          <div class="col-md-6">
+            <h1 class="fw-bold display-5">50% OFF on your First Order</h1>
+            <p class="mt-3">Use code: FIRSTFOOD</p>
+            <button class="btn btn-light text-danger fw-bold mt-3 px-4">Order Now</button>
+          </div>
+
+          <div class="col-md-6 text-center">
+            <img src="foodburger.jpg"
+              class="img-fluid rounded shadow" style="max-height:300px;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row align-items-center bg-gradient-to-r from-green-400 to-blue-500 text-white p-5 rounded-4 shadow-lg">
+
+          <div class="col-md-6">
+            <h1 class="fw-bold display-5">Delicious Pizza Deals 🍕</h1>
+            <p class="mt-3">Flat 60% OFF</p>
+            <button class="btn btn-light text-success fw-bold mt-3 px-4">Grab Now</button>
+          </div>
+
+          <div class="col-md-6 text-center">
+            <img src="pizza.jpg"
+              class="img-fluid rounded shadow" style="max-height:300px;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  
+     <!-- Slide 3-->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row align-items-center bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400 text-white p-5 rounded-4 shadow-lg">
+
+          <div class="col-md-6">
+            <h1 class="fw-bold display-5">50% OFF on your First Order</h1>
+            <p class="mt-3">Use code: FIRSTFOOD</p>
+            <button class="btn btn-light text-danger fw-bold mt-3 px-4">Order Now</button>
+          </div>
+
+          <div class="col-md-6 text-center">
+            <img src="new briyani2.jpg"
+              class="img-fluid rounded shadow"  style="max-height:300px; width:90% ; ">          
+          </div>
+
+        </div>
+      </div>
+    
+    </div>
+ 
+     <!-- Slide 4-->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row align-items-center bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 text-white p-5 rounded-4 shadow-lg">
+
+          <div class="col-md-6">
+            <h1 class="fw-bold display-5">50% OFF on your First Order</h1>
+            <p class="mt-3">Use code: FIRSTFOOD</p>
+            <button class="btn btn-light text-danger fw-bold mt-3 px-4">Order Now</button>
+          </div>
+
+          <div class="col-md-6 text-center">
+            <img src="salad4.jpg"
+              class="img-fluid rounded shadow"  style="max-height:300px; width:90% ; ">          
+          </div>
+
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" data-bs-target="#banner" data-bs-slide="prev">
+    <span class="carousel-control-pill-prev"></span>
+  </button>
+
+  <button class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+   
+   <button class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+
+</div>
+
+<!--  CARDS -->
+<div class="container mt-5">
+
+ 
+  <h3 class="fw-bold mb-1"><i class="bi bi-fire text-danger me-2"></i> Featured Foods</h3>
+  
+  <p class="text-muted mb-0" style="font-size:14px; letter-spacing:0.5px;">
+  🍽️ Hand-picked delicious meals for you
+</p>
+
+  <div class="row mt-2 g-4">
+   
+   
+   <span class="text-orange-500 font-semibold cursor-pointer flex items-center gap-1 hover:gap-2 transition-all">
+  View All
+  <span>→</span>
+  <div class="mb-4"></div>
+</span>
+
+    <!-- CARD 1 -->
+    <div class="col-md-3">
+      <div class="card shadow border-0 rounded-4 overflow-hidden">
+        <img src="foods1.jpg" class="card-img-top" >
+        <!--  Rating Badge -->
+          <div class="position-absolute top-0 end-0 m-3 bg-white px-3 py-1 rounded-pill shadow d-flex items-center">
+  <span class="text-warning me-2">★</span>
+  <span class="fw-bold">4.8</span>
+</div>
+        <div class="card-body">
+          <h5 class="fw-bold">Cheese Burger</h5>
+          <p class="text-muted">15 mins •</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <span class="text-danger fw-bold">₹99</span>
+          <button class="btn btn-danger btn-sm">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col-md-3">
+      <div class="card shadow border-0 rounded-4 overflow-hidden">
+        <img src="foods2.jpg" class="card-img-top">
+         
+         <div class="position-absolute top-0 end-0 m-3 bg-white px-3 py-1 rounded-pill shadow d-flex items-center">
+  <span class="text-warning me-2">★</span>
+  <span class="fw-bold">4.5</span>
+</div>
+
+        <div class="card-body">
+          <h5 class="fw-bold">Pizza</h5>
+          <p class="text-muted">20 mins •</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <span class="text-danger fw-bold">₹149</span>
+          <button class="btn btn-danger btn-sm">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-md-3">
+      <div class="card shadow border-0 rounded-4">
+        <img src="foods3.jpg" class="card-img-top">
+        <div class="position-absolute top-0 end-0 m-3 bg-white px-3 py-1 rounded-pill shadow d-flex items-center">
+  <span class="text-warning me-2">★</span>
+  <span class="fw-bold">4.8</span>
+</div>
+        <div class="card-body">
+          <h5 class="fw-bold">Double Burger</h5>
+            <p class="text-muted">18 mins •</p>
+          </div>
+        <div class="card-footer d-flex justify-content-between">
+          <span class="text-danger fw-bold">₹129</span>
+          <button class="btn btn-danger btn-sm">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col-md-3">
+      <div class="card shadow border-0 rounded-4">
+        <img src="foods4.jpg" class="card-img-top">
+          <div class="position-absolute top-0 end-0 m-3 bg-white px-3 py-1 rounded-pill shadow d-flex items-center">
+  <span class="text-warning me-2">★</span>
+  <span class="fw-bold">4.3</span>
+</div>
+        <div class="card-body">
+          <h5 class="fw-bold">Healthy Salad</h5>
+          <p class="text-muted">10 mins • </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <span class="text-danger fw-bold">₹89</span>
+          <button class="btn btn-danger btn-sm">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="col-md-3">
+      <div class="card shadow border-0 rounded-4">
+        <img src="foods5.jpg" class="card-img-top">
+          <div class="position-absolute top-0 end-0 m-3 bg-white px-3 py-1 rounded-pill shadow d-flex items-center">
+  <span class="text-warning me-2">★</span>
+  <span class="fw-bold">4.4</span>
+</div>
+        <div class="card-body">
+          <h5 class="fw-bold">Pasta</h5>
+          <p class="text-muted">25 mins • </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <span class="text-danger fw-bold">₹119</span>
+          <button class="btn btn-danger btn-sm">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 6 -->
+    <div class="col-md-3">
+      <div class="card shadow border-0 rounded-4">
+        <img src="foods6.jpg" class="card-img-top">
+          <div class="position-absolute top-0 end-0 m-3 bg-white px-3 py-1 rounded-pill shadow d-flex items-center">
+  <span class="text-warning me-2">★</span>
+  <span class="fw-bold">4.7</span>
+</div>
+        <div class="card-body">
+          <h5 class="fw-bold">Veg Burger</h5>
+          <p class="text-muted">12 mins •</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <span class="text-danger fw-bold">₹79</span>
+          <button class="btn btn-danger btn-sm">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 7 -->
+    <div class="col-md-3">
+      <div class="card shadow border-0 rounded-4">
+        <img src="foods7.jpg" class="card-img-top">
+          <div class="position-absolute top-0 end-0 m-3 bg-white px-3 py-1 rounded-pill shadow d-flex items-center">
+  <span class="text-warning me-2">★</span>
+  <span class="fw-bold">4.9</span>
+</div>
+        <div class="card-body">
+          <h5 class="fw-bold">Cheese Pizza</h5>
+          <p class="text-muted">22 mins • </p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <span class="text-danger fw-bold">₹139</span>
+          <button class="btn btn-danger btn-sm">+</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD 8 -->
+    <div class="col-md-3">
+      <div class="card shadow border-0 rounded-4">
+        <img src="foods8.jpg" class="card-img-top">
+          <div class="position-absolute top-0 end-0 m-3 bg-white px-3 py-1 rounded-pill shadow d-flex items-center">
+  <span class="text-warning me-2">★</span>
+  <span class="fw-bold">4.8</span>
+</div>
+        <div class="card-body">
+          <h5 class="fw-bold">French Fries</h5>
+          <p class="text-muted">8 mins •</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+          <span class="text-danger fw-bold">₹69</span>
+          <button class="btn btn-danger btn-sm">+</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </div>
+</div>
+
+<!--  FOOTER -->
+<footer class="mt-5 p-5 bg-dark text-white">
+
+  <div class="container">
+    <div class="row">
+
+      <!-- Logo -->
+     <div class="col-md-3">
+        <div class="mb-3">
+          <span class="bg-danger text-white p-2 rounded-pill">
+            <i class="bi bi-fire text-white"></i>
+          </span>
+          <span class="fw-bold ms-2 text-white">Foodify</span>
+        </div>
+
+        <p class="text-secondary" style="font-size: 14px;">
+          Delicious food from your favorite restaurants delivered straight to your doorstep.
+        </p>
+      </div>
+
+      <!-- Services -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">Our Services</h6>
+        <p>Home Delivery</p>
+        <p>Corporate Catering</p>
+        <p>Bulk Orders</p>
+        <p>Exclusive Offers</p>
+      </div>
+
+      <!-- Company -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">Company</h6>
+        <p>About Us</p>
+        <p>Contact</p>
+        <p>Privacy Policy</p>
+        <p>Terms</p>
+      </div>
+
+      <!-- Social -->
+      <div class="col-md-3">
+        <h6 class="fw-bold mb-3">Follow Us</h6>
+        <p><i class="bi bi-facebook"></i> Facebook</p>
+        <p><i class="bi bi-twitter"></i> Twitter</p>
+        <p><i class="bi bi-youtube"></i> Youtube</p>
+        <p><i class="bi bi-instagram"></i> Instagram</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="text-center mt-4 text-secondary">
+      © 2026 Food App | All Rights Reserved
+    </div>
+
+  </div>
+
+</footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
